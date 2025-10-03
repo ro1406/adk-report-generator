@@ -65,7 +65,7 @@ async def get_api_data(
     return_data = json.loads(data.reset_index().to_json(orient="records", date_format="iso"))
 
     # Save the data fetched to artifacts
-    await tool_context.save_artifact("yfinance_data_json", return_data)
+    await tool_context.save_artifact("yfinance_data_json", {"stock_data": return_data})
 
     # Try to save into tool context instead
     # tool_context.state["finance_df"] = return_data
