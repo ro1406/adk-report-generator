@@ -3,12 +3,15 @@ Author: Rohan Mitra (rohan.mitra@dubizzle.com)
 agent.py (c) 2025
 Desc: description
 Created:  2025-09-29T16:50:49.682Z
-Modified: 2025-10-03T21:01:37.500Z
+Modified: 2025-12-10T10:31:56.772Z
 """
 
 from google.adk.agents import LlmAgent, SequentialAgent
 from google.adk.tools.agent_tool import AgentTool
 from google.adk.tools import load_artifacts
+import warnings
+#Disable warnings
+warnings.filterwarnings("ignore")
 
 from .prompt import INTERFACE_AGENT_PROMPT
 from .sub_agents.data_retriever_agent import data_retriever_agent
