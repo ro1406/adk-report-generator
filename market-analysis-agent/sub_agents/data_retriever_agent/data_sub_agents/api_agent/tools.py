@@ -3,7 +3,7 @@ Author: Rohan Mitra (rohan.mitra@dubizzle.com)
 tools.py (c) 2025
 Desc: description
 Created:  2025-09-29T17:25:34.452Z
-Modified: 2025-10-03T21:11:11.072Z
+Modified: 2025-12-10T12:01:29.224Z
 """
 
 # import contextlib
@@ -62,10 +62,12 @@ async def get_api_data(
     # Remove the multi-index columns - Mainly removes the ticker name
     data.columns = data.columns.get_level_values(0)
 
-    return_data = json.loads(data.reset_index().to_json(orient="records", date_format="iso"))
+    return_data = json.dumps(json.loads(data.reset_index().to_json(orient="records", date_format="iso")))
+
+    stock_data_to_save = types.Part(text=return_data)
 
     # Save the data fetched to artifacts
-    await tool_context.save_artifact("yfinance_data_json", {"stock_data": return_data})
+    await tool_context.save_artifact(filename="yfinance_data_json", artifact=stock_data_to_save)
 
     # Try to save into tool context instead
     # tool_context.state["finance_df"] = return_data
