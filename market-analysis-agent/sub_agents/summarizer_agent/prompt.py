@@ -3,7 +3,7 @@ Author: Rohan Mitra (rohan.mitra@dubizzle.com)
 prompt.py (c) 2025
 Desc: description
 Created:  2025-09-29T20:32:51.502Z
-Modified: 2025-10-03T21:01:49.377Z
+Modified: 2025-12-10T11:44:03.873Z
 """
 
 from datetime import datetime
@@ -30,7 +30,7 @@ You are a financial analysis and summarization agent. Your task is to analyze bo
 **Required Analysis Steps:**
 
 **Step 1: Load and Analyze Stock Data**
-- Use `load_artifacts("yfinance_data_json")` to get the stock price data
+- Use `load_artifacts("yfinance_data_json")` to get the stock price data. Do not change the name of the variable.
 - Analyze the data structure (dates, OHLCV - Open, High, Low, Close, Volume)
 - Calculate key technical indicators:
   - Price trends (uptrend, downtrend, sideways)
