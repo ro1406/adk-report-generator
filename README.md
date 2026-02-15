@@ -1,6 +1,8 @@
-# ADK Workshop: "It Starts with a Stock Bot - Agentic AI Design Pattern"
+# ADK Workshop on Multi-Agent Workflows With ADK
 
-This repository contains the code and examples presented at the workshop **"It Starts with a Stock Bot: An Agentic AI Design Pattern for Scalable AI Workflows"** at Google Developer Group DevFest 2025, held at Google HQ Dubai.
+This repository contains the code and examples presented at the following workshops: 
+- **"It Starts with a Stock Bot: An Agentic AI Design Pattern for Scalable AI Workflows"** at Google Developer Group DevFest 2025, held at Google HQ, Dubai.
+- **"Creating Multi-Agent Workflows with Gemini Enterprise & ADK"** at Build With AI, Google Developer Groups & Zaka AI, held at In5 Tech, Dubai.
 
 ## Overview
 
