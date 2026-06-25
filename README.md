@@ -21,7 +21,7 @@ This will start the ADK web interface at `http://127.0.0.1:8000/dev-ui/` where y
 ## 📁 Repository Structure
 
 ### Market Analysis Agent (Stock Bot) 🏦
-**Location:** `adk-report-generator/market-analysis-agent/`
+**Location:** `adk-report-generator/market_analysis_agent/`
 
 The main example from the workshop - a sophisticated financial analysis system that demonstrates the agentic AI design pattern for scalable AI workflows.
 
@@ -41,7 +41,7 @@ The main example from the workshop - a sophisticated financial analysis system t
 **File Structure:**
 ```
 adk-report-generator/
-├── market-analysis-agent/
+├── market_analysis_agent/
 │   ├── agent.py                    # Main interface agent
 │   ├── prompt.py                   # Agent instructions and prompts
 │   └── sub_agents/
